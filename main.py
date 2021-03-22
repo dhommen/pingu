@@ -65,6 +65,6 @@ async def on_message(message):
         await message.channel.send(axolotlFacts[random.randint(0,16)])
 
     if message.content.startswith('$penguin'):
-        await message.channel.send(axolotlFacts[random.randint(0,19)])
+        await message.channel.send(pinguinFacts[random.randint(0,19)])
 
 client.run(os.getenv('TOKEN'))
