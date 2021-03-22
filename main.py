@@ -21,4 +21,4 @@ async def on_message(message):
     if message.content.startswith('$adventure'):
         await message.channel.send('Hello ' + message.author.name + ' your epic adventure will start soon!')
 
-client.run(os.environ('TOKEN'))
+client.run(os.getenv('TOKEN'))
