@@ -60,6 +60,9 @@ async def on_message(message):
 
     if message.content.startswith('$adventure'):
         await message.channel.send('Hello ' + message.author.name + ' your epic adventure will start soon!')
+        
+    if message.content.startswith('$git'):
+        await message.channel.send('https://github.com/dhommen/pingu')
     
     if message.content.startswith('$axolotl'):
         await message.channel.send(axolotlFacts[random.randint(0,16)])
